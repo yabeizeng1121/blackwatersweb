@@ -1,0 +1,478 @@
+/* Basic Reset */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Set a reasonable height for the logo */
+}
+
+.title {
+    font-size: 2em; /* Increase font size */
+    font-weight: bold;
+    margin-left: 15px;
+    color: #0f0f0f;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f0f0f;
+    min-height: 80px;
+    color: #0f0f0f;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+.contact-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #0f0f0f;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #0073e6;
+}
+
+/* Background Image Section */
+.bg-image {
+    height: 70vh; /* Adjust height as needed */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+}
+
+/* Hero Section Styles */
+.hero {
+    color: white;
+    text-align: left;
+    padding: 100px 40px;
+    position: relative;
+    height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    max-width: 500px;
+    margin-top: 230px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    color: #0f0f0f;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #5d5e60;
+}
+
+/* Key Points Section */
+.key-points {
+    padding: 60px 300px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.key-points h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.point {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: flex-end;
+    gap: 20px;
+    text-align: left;
+}
+
+.point.reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.point-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.point-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.point-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.point-text p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Additional Text Section */
+.additional-text {
+    margin-top: 60px;
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.difference-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.difference-subtitle {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Change Management Section */
+.change-management {
+    background-color: #66b394; /* Set the background color */
+    padding: 60px 0;
+    border: 20px;
+    max-width: 1300px;
+    display: flex;
+    margin-left: 290px;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-bottom: 90px;
+    max-height: 700px;
+}
+
+.change-management-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    max-height: 600px;
+    margin-left: -250px;
+    margin-right: 80px;
+}
+
+.scroll-container {
+    background-color: #96b78c;
+    overflow-x: auto;
+    width: 1200px;
+    padding: 1px; /* Allow the container to take available space */
+}
+
+.scroll-inner-container {
+    white-space: nowrap;
+    width: 300%; /* Increase the width of the inner container */
+}
+
+.scroll-container img {
+    display: inline-block;
+    width: 800px; /* Set the width for the images */
+    height: 500px;
+    padding: 1px;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    margin-right: 0px; /* Add margin between images if needed */
+}
+
+.change-management-text {
+    width: 70%;
+    color: white;
+    padding: 0 20px;
+    margin-left: 150px; /* Add margin to the left to create empty space */
+}
+
+.change-management-text h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.change-management-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Project Hero Section Styles */
+.phero {
+    color: white;
+    text-align: left;
+    padding: 100px 40px;
+    position: relative;
+    height: 70vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+}
+
+.phero-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    margin-top: 230px;
+    max-width: 500px;
+}
+
+.phero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.phero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.pbg-image {
+    height: 70vh; /* Adjust height as needed */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+}
+
+/* Ambitious Goals Section */
+.ambitious-goals {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 160px;
+    padding: 60px 40px;
+    background-color: white;
+}
+
+.goals-content {
+    width: 600px;
+    padding-right: 20px;
+    margin-left: 30px;
+
+}
+
+.goals-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.goals-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.goals-difference {
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Keep items on the same line */
+    margin-right: 90px;
+}
+
+.goals-difference img {
+    width: 60px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the images properly */
+    margin-right: 10px; /* Space between the image and text */
+}
+
+
+.scroll-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.difference-title2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.difference-point {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.difference-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+}
+
+.difference-point p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.comparison-section {
+    display: flex;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.comparison-container {
+    margin-left: 80px;
+    display: flex;
+    width: 1300px;
+    height: 400px;
+    margin-top: 80px;
+}
+
+.img-comp-container {
+    position:relative;
+    height:400px; /* Should be the same height as the images */
+    width: 600px; /* Adjust width as necessary */
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-comp-img img {
+    display: block;
+    vertical-align: middle;
+    object-fit: cover;
+    width: 500px;
+    height: 250px;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /* Set the appearance of the slider: */
+    width: 40px;
+    height: 40px;
+
+    background-color: #2196F3;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.comparison-text {
+    padding: 20px;
+    width: 50%; /* Adjust width as necessary */
+}
+
+.comparison-text h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.comparison-text p {
+    font-size: 1em;
+    color: #333;
+}
+
+.analysis-section {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.analysis-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.analysis-map {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    margin: 0 auto;
+}
