@@ -9,6 +9,16 @@
     <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("myLinks");
+            if (x.className === "nav-links") {
+                x.className += " active";
+            } else {
+                x.className = "nav-links";
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Header with Navigation Bar -->
@@ -19,13 +29,14 @@
             </a>
             <span class="title">Saltwater Intrusion</span>
         </div>
-        <nav>
-            <ul class="nav-links">
+        <nav class="topnav">
+            <ul class="nav-links" id="myLinks">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('project') }}">Our Project</a></li>
                 <li><a href="{{ url_for('analysis') }}">Analysis</a></li>
                 <li><a href="{{ url_for('contact') }}" class="contact-btn">Contact</a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
         </nav>
     </header>
 

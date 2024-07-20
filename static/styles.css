@@ -204,10 +204,10 @@ header {
     max-width: 1300px;
     display: flex;
     margin-left: 290px;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-right: 50px;
     margin-bottom: 90px;
-    max-height: 700px;
+    max-height: 1000px;
 }
 
 .change-management-content {
@@ -215,7 +215,7 @@ header {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    max-height: 600px;
+    max-height: 900px;
     margin-left: -250px;
     margin-right: 80px;
 }
@@ -223,8 +223,9 @@ header {
 .scroll-container {
     background-color: #96b78c;
     overflow-x: auto;
-    width: 1200px;
+    width: 1000px;
     padding: 1px; /* Allow the container to take available space */
+    white-space: nowrap;
 }
 
 .scroll-inner-container {
@@ -539,4 +540,269 @@ header {
 .custom-contact-form-button:hover {
     background-color: #0056b3;
 }
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Change to column layout for mobile */
+        padding: 10px;
+    }
+
+    .logo-container {
+        justify-content: left; /* Center logo on mobile */
+        margin-bottom: 10px;
+        margin-left: -50px;
+    }
+
+    .title {
+        font-size: 1.2em; /* Adjust font size for mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links on mobile */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 32px 22px; /* Adjust padding as needed */
+        background: black; /* Background color of the icon */
+        color: white; /* Color of the icon (bars) */
+        cursor: pointer; /* Change cursor to pointer */
+    }
+
+    .nav-links a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .icon:hover {
+        background-color: gray; /* Add gray hover color to icon */
+    }
+
+    .bg-image,
+    .hero,
+    .phero {
+        height: 50vh; /* Adjust height for mobile */
+    }
+
+    .hero-content,
+    .phero-content {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .hero h1,
+    .phero h1 {
+        font-size: 1.5em; /* Adjust font size for mobile */
+    }
+
+    .hero p,
+    .phero p {
+        font-size: 1em; /* Adjust font size for mobile */
+    }
+
+    .key-points,
+    .additional-text,
+    .change-management,
+    .ambitious-goals,
+    .comparison-section,
+    .analysis-section {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+
+    .point {
+        flex-direction: column; /* Change to column layout for mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    .point.reverse {
+        flex-direction: column; /* Change to column layout for mobile */
+        align-items: center;
+        text-align: center;
+    }
+
+    .point-icon {
+        margin-bottom: 10px; /* Add margin for mobile */
+    }
+
+    .point-text {
+        max-width: 100%; /* Adjust width for mobile */
+        text-align: center;
+    }
+
+    .goals-content,
+    .goals-difference {
+        width: 40%; /* Adjust width for mobile */
+        padding: 60px;
+    }
+
+    .goals-title {
+        text-align: center; /* Center text for mobile */
+    }
+
+    .change-management {
+        padding: 20px 10px; /* Adjust padding for mobile */
+        flex-direction: column; /* Change to column layout */
+        margin: 20px auto; /* Center align with auto margins */
+        max-width: 100%; /* Full width for mobile */
+        max-height: auto; /* Adjust height for mobile */
+    }
+
+    .change-management-content {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align items */
+        justify-content: center;
+        max-width: 100%; /* Full width for mobile */
+        margin: 0; /* Reset margins */
+    }
+
+    .scroll-container {
+        width: 100%; /* Full width for mobile */
+        padding: 0; /* Adjust padding */
+    }
+
+    .scroll-container img {
+        width: 100%; /* Full width for mobile */
+        height: 400px; /* Increase height for images */
+        object-fit: cover; /* Ensure the image covers the area without stretching */
+        margin-bottom: 10px; /* Add margin between images */
+    }
+
+    .change-management-text {
+        width: 100%; /* Full width for mobile */
+        padding: 20px; /* Adjust padding for mobile */
+        text-align: center; /* Center text for mobile */
+        margin: 20px 0; /* Adjust margins */
+    }
+
+    .scroll-inner-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-comp-container {
+        width: 100%; /* Adjust width for mobile */
+        height: auto;
+    }
+
+    .custom-contact-form-container {
+        width: 100%; /* Adjust width for mobile */
+        max-width: 90%;
+    }
+    
+    /* Add these lines */
+    .ambitious-goals {
+        padding: 0px; /* Adjust padding for mobile */
+        display: flex;
+        margin-top: -20px;
+        flex-direction: column; /* Change to column layout for mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .goals-content,
+    .goals-difference {
+        width: 100%; /* Adjust width for mobile */
+        
+        margin-right: 0px;
+    }
+
+    .goals-title {
+        text-align: center; /* Center text for mobile */
+    }
+
+    .scroll-container2 {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .difference-point {
+        display: flex;
+        flex-direction: column; /* Change to column layout for mobile */
+        align-items: center;
+        text-align: center;
+        margin-left: -15px;
+        margin-bottom: 10px; /* Add margin for spacing */
+        width: 120%; /* Full width for mobile */
+        height: 120px;
+        padding: 10px; /* Add padding for spacing */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+
+    .difference-icon {
+        margin-bottom: 10px; /* Add margin for mobile */
+        width: 50px; /* Adjust icon size for mobile */
+        height: 50px;
+    }
+    .comparison-section{
+        height: 700px;
+    }
+    .comparison-container {
+        flex-direction: column; /* Change to column layout for mobile */
+        align-items: center;
+        width: 100%; /* Adjust width for mobile */
+        margin: 0;
+    }
+
+    .img-comp-container {
+        width: 80%; /* Adjust width for mobile */
+        height: auto;
+        position: relative; /* Ensure the slider is positioned correctly */
+        margin-left: -60px;
+    }
+
+    .img-comp-img {
+        position: center;
+        width: 350px;
+        height: 200px;
+        overflow:hidden;
+    }
+
+    .img-comp-img img {
+        display:block;
+        vertical-align:middle;
+    }
+
+    .img-comp-slider {
+        width: 30px; /* Slider width */
+        height: 30px; /* Slider height */
+        background-color: #2196F3; /* Slider color */
+        opacity: 0.7; /* Slider opacity */
+        border-radius: 50%; /* Rounded slider */
+        position: absolute;
+        z-index: 9;
+        cursor: ew-resize;
+    }
+
+    .comparison-text {
+        margin-top: 200px;
+        width: 100%;
+        padding: 20px; /* Adjust padding for mobile */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .comparison-text h2 {
+        font-size: 1.8em; /* Adjust font size for mobile */
+    }
+
+    .comparison-text p {
+        font-size: 1em; /* Adjust font size for mobile */
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+    
+}
+    
 
